@@ -1,0 +1,24 @@
+{
+  "name": "lab02-static-server",
+  "version": "1.0.0",
+  "description": " servidor http basico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanLuky/static-server.git"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "script"
+  ],
+  "author": "ivan999art@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanLuky/static-server/issues"
+  },
+  "homepage": "https://github.com/ivanLuky/static-server#readme"
+}
