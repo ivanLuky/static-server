@@ -1,5 +1,6 @@
 // http
  var http = require("http");
+ var fs = require('fs');
  var PORT = process.env.PORT || 3000;
  var IP = process.env.IP || '127.0.0.1';
  if(IP == '127.0.0.1'){
@@ -10,13 +11,10 @@
      // Armar la respuesta http
      // Armar un encabezado http
      res.writeHead(200,{
-         "Content-Type" : "text/plain",
+         "Content-Type" : "text/html",
          "Server" : "ITGAM@4.2.4"
      });
-     // Enviamos la respuesta
-     res.write("Servidor de Ivan Luky diamon");
-     // Cerrar la conexion
-     res.end();
+     
  });
  // Poner a trabjar al server
  server.listen(PORT,IP,function(){
