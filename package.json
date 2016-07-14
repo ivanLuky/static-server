@@ -1,0 +1,25 @@
+{
+  "name": "lab02-static-server-1",
+  "version": "1.0.0",
+  "description": "servidor web statico en node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanLuky/static-server.git"
+  },
+  "keywords": [
+    "node",
+    "static-server",
+    "web"
+  ],
+  "author": "ivan alejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanLuky/static-server/issues"
+  },
+  "homepage": "https://github.com/ivanLuky/static-server#readme"
+}
