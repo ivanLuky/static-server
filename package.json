@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "lab02-static-server-1",
   "version": "1.0.0",
   "description": "servidor web statico en node",
@@ -6,17 +7,33 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
+=======
+  "name": "lab02-static-server",
+  "version": "1.0.0",
+  "description": " servidor http basico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 364ac5a8cd9df8014847a35248ea0063a95962f8
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ivanLuky/static-server.git"
   },
   "keywords": [
+<<<<<<< HEAD
     "node",
     "static-server",
     "web"
   ],
   "author": "ivan alejandro",
+=======
+    "server",
+    "node",
+    "script"
+  ],
+  "author": "ivan999art@gmail.com",
+>>>>>>> 364ac5a8cd9df8014847a35248ea0063a95962f8
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ivanLuky/static-server/issues"
