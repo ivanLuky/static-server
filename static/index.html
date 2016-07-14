@@ -2,36 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mis ligars Favoritos</title>
+    <link 
+    rel="stylesheet" 
+    href="./vendor/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>Mis lugares Favoritos</title>
 </head>
-<body>
-    <h1>Los lugares favoritos de Ivan Luky</h1>
-     <div class="body">
-         <div class="lugar1">
-             <h2>Alaska</h2>
-             <img
-             width="300px"
-             height="300px" 
-             src="http://www.takepart.com/sites/default/files/styles/large_responsive_desktop/public/Polar-bears-win-alaska-MAIN.jpg?itok=w72XI2DG"
-             alt="Alaska">
-         </div>
-         <div class="lugar2">
-             <h2>Rusia</h2>
-             <img
-             width="300px"
-             height="300px" 
-             src="http://www.panavision-tours.es/viajes/viajes-turismo-rusia/viajes-rusia.jpg" 
-             alt="Rusia">
-         </div>
-         <div class="lugar3">
-             <h2>Veracruz</h2>
-             <img
-             width="300px"
-             height="300px" 
-             src="http://www.sanfrancisco.travel/sites/sftraveldev.prod.acquia-sites.com/files/Istock%20Limited%20-%20iStock_000007910856XLarge.jpg%20(2).jpg" 
-             alt="Veracruz">
-         </div>
-     </div>
-    
+<body onload="hola()">
+    <h1>Los lugares favoritos de Ivan Rivalcoba</h1>
+    <div class="body">
+        <div class="lugar1">
+            <h2>Londres</h2>
+            <img
+            width="300px"
+            height="300px" 
+            src="http://www.arqhys.com/construccion/fotos/construccion/Piedra-Sobre-Acero-en-el-Puente-de-Londres.jpg"
+            alt="london Bridge">
+        </div>
+        <div class="lugar2">
+            <h2>Barcelona - Parque Well</h2>
+            <img
+            width="300px"
+            height="300px" 
+            src="http://www.parkguell.cat/uploads/tx_nivoslider/Vista_escalinata_acces_Park_Guell.jpg" 
+            alt="Parque Guell">
+        </div>
+        <div class="lugar3">
+            <h2>San Francisco</h2>
+            <img
+            width="300px"
+            height="300px" 
+            src="http://www.sanfrancisco.travel/sites/sftraveldev.prod.acquia-sites.com/files/Istock%20Limited%20-%20iStock_000007910856XLarge.jpg%20(2).jpg" 
+            alt="Golden Gate">
+        </div>
+    </div>
+    <div class="selector">
+        <button onclick="changeBkgColor()">CAMBIAR FONDO</button>
+    </div>
+    <!-- Seccion de Scripts -->
+    <script src="./vendor/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/site.js"></script>
 </body>
 </html>
