@@ -1,4 +1,4 @@
-var fs = require("fs");
+var fs = require('fs');
 var objconfig = 
  JSON.parse(
      fs.readFileSync("./config/config.json", "utf-8")
