@@ -1,23 +1,24 @@
 // http
- var http = require("http");
- var fs = require('fs');
- var PORT = process.env.PORT || 3000;
- var IP = process.env.IP || '127.0.0.1';
- if(IP == '127.0.0.1'){
-     console.log(">---Ejecuntando modo local---<");
- }
- // Crear un servidor basico
- var server = http.createServer(function(req, res){
-     // Armar la respuesta http
-     // Armar un encabezado http
-     res.writeHead(200,{
-         "Content-Type" : "text/html",
-         "Server" : "ITGAM@4.2.4"
-     });
-     
- });
- // Poner a trabjar al server
- server.listen(PORT,IP,function(){
-     console.log(`> Server listening @http://${IP}:${PORT} ...`);
- });
- ///este es un comentario sin importancia 
+var http = require("http");
+var fs = require('fs');
+var config = require("./config/config.js");
+var staticServer = require('./internals/static-server');
+// Obteniendo las configuraciones
+// del modulo de configuracion
+var PORT = config.PORT;
+var IP = config.IP;
+if(IP == '127.0.0.1'){
+    console.log("> ---- EJECUTANDO EN MODO LOCAL ----");
+}
+// Crear un servidor basico
+var server = http.createServer(function (req, res) {
+    //obtener la url del archivo 
+    //de la peticion le asigno una variable url
+    var url = req.url;
+    //sirvo la url con mi server statico
+    staticServer.serve(url, res);
+});
+// Poner a trabjar al server
+server.listen(PORT,IP,function(){
+    console.log(`> Server listening @http://${IP}:${PORT} ...`);
+});
